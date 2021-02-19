@@ -1,7 +1,6 @@
 pragma solidity 0.6.12;
 
 import "@openzeppelin/contracts/access/AccessControl.sol";
-// import "@openzeppelin/contract/token/ERC20.sol";
 
 
 contract SampleAccessControl is AccessControl {
