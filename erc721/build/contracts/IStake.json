@@ -1,0 +1,257 @@
+{
+  "contractName": "IStake",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "Deposit",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"Deposit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/wkzq/code/contracts/smartcontract-study/erc721/contracts/interfaces/IStake.sol\":\"IStake\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/wkzq/code/contracts/smartcontract-study/erc721/contracts/interfaces/IStake.sol\":{\"keccak256\":\"0xea605b390a214d3067319a44071b4d27527bf85a75868e7618b78470abfe2feb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f6381f871595305574ffeec84b8a3ff5cae1d191175b8e9549005ee6baa47a0d\",\"dweb:/ipfs/QmVSMLNDh1WNa9tYXXgWweu5ESJsWBmPPQXiSmViKnj47f\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.7.0;\n\ninterface IStake {\n  function Deposit() external returns (uint256);\n}",
+  "sourcePath": "/Users/wkzq/code/contracts/smartcontract-study/erc721/contracts/interfaces/IStake.sol",
+  "ast": {
+    "absolutePath": "/Users/wkzq/code/contracts/smartcontract-study/erc721/contracts/interfaces/IStake.sol",
+    "exportedSymbols": {
+      "IStake": [
+        250
+      ]
+    },
+    "id": 251,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 244,
+        "literals": [
+          "solidity",
+          "^",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:2"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 250,
+        "linearizedBaseContracts": [
+          250
+        ],
+        "name": "IStake",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "ed21248c",
+            "id": 249,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "Deposit",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 245,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "95:2:2"
+            },
+            "returnParameters": {
+              "id": 248,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 247,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 249,
+                  "src": "116:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 246,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "116:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "115:9:2"
+            },
+            "scope": 250,
+            "src": "79:46:2",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 251,
+        "src": "58:69:2"
+      }
+    ],
+    "src": "33:94:2"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/Users/wkzq/code/contracts/smartcontract-study/erc721/contracts/interfaces/IStake.sol",
+      "exportedSymbols": {
+        "IStake": [
+          250
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.7",
+            ".0"
+          ]
+        },
+        "id": 244,
+        "name": "PragmaDirective",
+        "src": "33:23:2"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            250
+          ],
+          "name": "IStake",
+          "scope": 251
+        },
+        "children": [
+          {
+            "attributes": {
+              "functionSelector": "ed21248c",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "Deposit",
+              "scope": 250,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 245,
+                "name": "ParameterList",
+                "src": "95:2:2"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "scope": 249,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 246,
+                        "name": "ElementaryTypeName",
+                        "src": "116:7:2"
+                      }
+                    ],
+                    "id": 247,
+                    "name": "VariableDeclaration",
+                    "src": "116:7:2"
+                  }
+                ],
+                "id": 248,
+                "name": "ParameterList",
+                "src": "115:9:2"
+              }
+            ],
+            "id": 249,
+            "name": "FunctionDefinition",
+            "src": "79:46:2"
+          }
+        ],
+        "id": 250,
+        "name": "ContractDefinition",
+        "src": "58:69:2"
+      }
+    ],
+    "id": 251,
+    "name": "SourceUnit",
+    "src": "33:94:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.6+commit.7338295f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-03-03T16:23:19.354Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
