@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "build": "truffle complie && waffle && waffle flatten"
+  },
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^1.2.2",
+    "@openzeppelin/contracts": "^3.4.0",
+    "ethereum-waffle": "^3.2.2",
+    "solc": "^0.8.1",
+    "truffle": "^5.1.65",
+    "truffle-plugin-verify": "^0.5.4"
+  }
+}
