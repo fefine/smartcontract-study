@@ -58,54 +58,56 @@
       "inputs": [],
       "name": "normalOp",
       "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
       "name": "ownerOp",
       "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"normalOp\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ownerOp\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/wkzq/code/contracts/smartcontract-study/erc20/contracts/SampleOnlyOwner.sol\":\"SampleOnlyOwner\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/wkzq/code/contracts/smartcontract-study/erc20/contracts/SampleOnlyOwner.sol\":{\"keccak256\":\"0xa3af300c59bca6c2744c5028dfed6802d2e9ab17abb0070d3236b1d1cacb2896\",\"urls\":[\"bzz-raw://ea5dd294c161f38c6674abc8d3d89e562516193ff782c6ab16746c583b5f74e8\",\"dweb:/ipfs/QmSJMB9KnEmYiatZnBi7ed5TTnZ396qvXAzct8kayy2twv\"]},\"@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0x15e2d5bd4c28a88548074c54d220e8086f638a71ed07e6b3ba5a70066fcf458d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://90faf5851c02f9bd42c5bfb54d4f0421a2612f50ab80b2c4fa24fa3792071cc2\",\"dweb:/ipfs/QmRGM4F2PcGVF85aTfaA9YBhCHHDqrMhRjyp6fGeBTtirb\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f\",\"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b5060006100216100c460201b60201c565b9050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508073ffffffffffffffffffffffffffffffffffffffff16600073ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3506100cc565b600033905090565b610591806100db6000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c8063251fc2ed1461005c5780635984550414610066578063715018a6146100705780638da5cb5b1461007a578063f2fde38b146100ae575b600080fd5b6100646100f2565b005b61006e6101a3565b005b6100786101a5565b005b610082610312565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100f0600480360360208110156100c457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061033b565b005b6100fa61052d565b73ffffffffffffffffffffffffffffffffffffffff16610118610312565b73ffffffffffffffffffffffffffffffffffffffff16146101a1576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b565b565b6101ad61052d565b73ffffffffffffffffffffffffffffffffffffffff166101cb610312565b73ffffffffffffffffffffffffffffffffffffffff1614610254576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff1660008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b61034361052d565b73ffffffffffffffffffffffffffffffffffffffff16610361610312565b73ffffffffffffffffffffffffffffffffffffffff16146103ea576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415610470576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260268152602001806105366026913960400191505060405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff1660008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b60003390509056fe4f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373a26469706673582212206060ba76f4ce8ebd7c0ca37910851a4f6e7dc437bed00d762471c69170b5e06e64736f6c634300060c0033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c8063251fc2ed1461005c5780635984550414610066578063715018a6146100705780638da5cb5b1461007a578063f2fde38b146100ae575b600080fd5b6100646100f2565b005b61006e6101a3565b005b6100786101a5565b005b610082610312565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100f0600480360360208110156100c457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061033b565b005b6100fa61052d565b73ffffffffffffffffffffffffffffffffffffffff16610118610312565b73ffffffffffffffffffffffffffffffffffffffff16146101a1576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b565b565b6101ad61052d565b73ffffffffffffffffffffffffffffffffffffffff166101cb610312565b73ffffffffffffffffffffffffffffffffffffffff1614610254576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff1660008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b61034361052d565b73ffffffffffffffffffffffffffffffffffffffff16610361610312565b73ffffffffffffffffffffffffffffffffffffffff16146103ea576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415610470576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260268152602001806105366026913960400191505060405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff1660008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b60003390509056fe4f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373a26469706673582212206060ba76f4ce8ebd7c0ca37910851a4f6e7dc437bed00d762471c69170b5e06e64736f6c634300060c0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"normalOp\",\"outputs\":[],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ownerOp\",\"outputs\":[],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/wkzq/code/smartcontract/study/erc20/contracts/SampleOnlyOwner.sol\":\"SampleOnlyOwner\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/wkzq/code/smartcontract/study/erc20/contracts/SampleOnlyOwner.sol\":{\"keccak256\":\"0x1a0ea5ed5f4f592bfded9fc413fcbb5ec23154ec449479ad41a99b6a00877d29\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6fbc76a996c6584d995425cad10f14d392eed0623fd74ba2644ab7b44e42cc57\",\"dweb:/ipfs/QmckyWtW5YyUgLmNS6jwhV6gRwVTFDHYGjF4jzgmFZxugC\"]},\"@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0x15e2d5bd4c28a88548074c54d220e8086f638a71ed07e6b3ba5a70066fcf458d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://90faf5851c02f9bd42c5bfb54d4f0421a2612f50ab80b2c4fa24fa3792071cc2\",\"dweb:/ipfs/QmRGM4F2PcGVF85aTfaA9YBhCHHDqrMhRjyp6fGeBTtirb\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f\",\"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060006100216100c460201b60201c565b9050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508073ffffffffffffffffffffffffffffffffffffffff16600073ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3506100cc565b600033905090565b610591806100db6000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c8063251fc2ed1461005c5780635984550414610066578063715018a6146100705780638da5cb5b1461007a578063f2fde38b146100ae575b600080fd5b6100646100f2565b005b61006e6101a3565b005b6100786101a5565b005b610082610312565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100f0600480360360208110156100c457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061033b565b005b6100fa61052d565b73ffffffffffffffffffffffffffffffffffffffff16610118610312565b73ffffffffffffffffffffffffffffffffffffffff16146101a1576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b565b565b6101ad61052d565b73ffffffffffffffffffffffffffffffffffffffff166101cb610312565b73ffffffffffffffffffffffffffffffffffffffff1614610254576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff1660008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b61034361052d565b73ffffffffffffffffffffffffffffffffffffffff16610361610312565b73ffffffffffffffffffffffffffffffffffffffff16146103ea576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415610470576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260268152602001806105366026913960400191505060405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff1660008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b60003390509056fe4f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373a26469706673582212200025d8f67d4585321d6c8bfff2e591f4b64559752f356a5f57ce0305c3fad15264736f6c634300060c0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c8063251fc2ed1461005c5780635984550414610066578063715018a6146100705780638da5cb5b1461007a578063f2fde38b146100ae575b600080fd5b6100646100f2565b005b61006e6101a3565b005b6100786101a5565b005b610082610312565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100f0600480360360208110156100c457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061033b565b005b6100fa61052d565b73ffffffffffffffffffffffffffffffffffffffff16610118610312565b73ffffffffffffffffffffffffffffffffffffffff16146101a1576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b565b565b6101ad61052d565b73ffffffffffffffffffffffffffffffffffffffff166101cb610312565b73ffffffffffffffffffffffffffffffffffffffff1614610254576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff1660008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b61034361052d565b73ffffffffffffffffffffffffffffffffffffffff16610361610312565b73ffffffffffffffffffffffffffffffffffffffff16146103ea576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415610470576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260268152602001806105366026913960400191505060405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff1660008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b60003390509056fe4f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373a26469706673582212200025d8f67d4585321d6c8bfff2e591f4b64559752f356a5f57ce0305c3fad15264736f6c634300060c0033",
   "immutableReferences": {},
-  "sourceMap": "79:113:3:-:0;;;;;;;;;;;;;884:17:5;904:12;:10;;;:12;;:::i;:::-;884:32;;935:9;926:6;;:18;;;;;;;;;;;;;;;;;;992:9;959:43;;988:1;959:43;;;;;;;;;;;;850:159;79:113:3;;598:104:10;651:15;685:10;678:17;;598:104;:::o;79:113:3:-;;;;;;;",
-  "deployedSourceMap": "79:113:3:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;152:38;;;:::i;:::-;;119:29;;;:::i;:::-;;1717:145:5;;;:::i;:::-;;1085:85;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;2011:240;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;152:38:3;1308:12:5;:10;:12::i;:::-;1297:23;;:7;:5;:7::i;:::-;:23;;;1289:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;152:38:3:o;119:29::-;:::o;1717:145:5:-;1308:12;:10;:12::i;:::-;1297:23;;:7;:5;:7::i;:::-;:23;;;1289:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1823:1:::1;1786:40;;1807:6;::::0;::::1;;;;;;;;1786:40;;;;;;;;;;;;1853:1;1836:6:::0;::::1;:19;;;;;;;;;;;;;;;;;;1717:145::o:0;1085:85::-;1131:7;1157:6;;;;;;;;;;;1150:13;;1085:85;:::o;2011:240::-;1308:12;:10;:12::i;:::-;1297:23;;:7;:5;:7::i;:::-;:23;;;1289:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2119:1:::1;2099:22;;:8;:22;;;;2091:73;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2208:8;2179:38;;2200:6;::::0;::::1;;;;;;;;2179:38;;;;;;;;;;;;2236:8;2227:6;::::0;:17:::1;;;;;;;;;;;;;;;;;;2011:240:::0;:::o;598:104:10:-;651:15;685:10;678:17;;598:104;:::o",
-  "source": "pragma solidity 0.6.12;\n\nimport \"@openzeppelin/contracts/access/Ownable.sol\";\n\ncontract SampleOnlyOwner is Ownable {\n  function normalOp() public {}\n\n  function ownerOp() public onlyOwner {}\n}\n\n",
-  "sourcePath": "/Users/wkzq/code/contracts/smartcontract-study/erc20/contracts/SampleOnlyOwner.sol",
+  "sourceMap": "112:123:0:-:0;;;;;;;;;;;;;884:17:1;904:12;:10;;;:12;;:::i;:::-;884:32;;935:9;926:6;;:18;;;;;;;;;;;;;;;;;;992:9;959:43;;988:1;959:43;;;;;;;;;;;;850:159;112:123:0;;598:104:2;651:15;685:10;678:17;;598:104;:::o;112:123:0:-;;;;;;;",
+  "deployedSourceMap": "112:123:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;190:43;;;:::i;:::-;;152:34;;;:::i;:::-;;1717:145:1;;;:::i;:::-;;1085:85;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;2011:240;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;190:43:0;1308:12:1;:10;:12::i;:::-;1297:23;;:7;:5;:7::i;:::-;:23;;;1289:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;190:43:0:o;152:34::-;:::o;1717:145:1:-;1308:12;:10;:12::i;:::-;1297:23;;:7;:5;:7::i;:::-;:23;;;1289:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1823:1:::1;1786:40;;1807:6;::::0;::::1;;;;;;;;1786:40;;;;;;;;;;;;1853:1;1836:6:::0;::::1;:19;;;;;;;;;;;;;;;;;;1717:145::o:0;1085:85::-;1131:7;1157:6;;;;;;;;;;;1150:13;;1085:85;:::o;2011:240::-;1308:12;:10;:12::i;:::-;1297:23;;:7;:5;:7::i;:::-;:23;;;1289:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2119:1:::1;2099:22;;:8;:22;;;;2091:73;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2208:8;2179:38;;2200:6;::::0;::::1;;;;;;;;2179:38;;;;;;;;;;;;2236:8;2227:6;::::0;:17:::1;;;;;;;;;;;;;;;;;;2011:240:::0;:::o;598:104:2:-;651:15;685:10;678:17;;598:104;:::o",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.6.12;\n\nimport \"@openzeppelin/contracts/access/Ownable.sol\";\n\ncontract SampleOnlyOwner is Ownable {\n  function normalOp() public view {}\n\n  function ownerOp() public onlyOwner view {}\n}\n\n",
+  "sourcePath": "/Users/wkzq/code/smartcontract/study/erc20/contracts/SampleOnlyOwner.sol",
   "ast": {
-    "absolutePath": "/Users/wkzq/code/contracts/smartcontract-study/erc20/contracts/SampleOnlyOwner.sol",
+    "absolutePath": "/Users/wkzq/code/smartcontract/study/erc20/contracts/SampleOnlyOwner.sol",
     "exportedSymbols": {
       "SampleOnlyOwner": [
-        136
+        15
       ]
     },
-    "id": 137,
-    "license": null,
+    "id": 16,
+    "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 122,
+        "id": 1,
         "literals": [
           "solidity",
           "0.6",
           ".12"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:3"
+        "src": "33:23:0"
       },
       {
         "absolutePath": "@openzeppelin/contracts/access/Ownable.sol",
         "file": "@openzeppelin/contracts/access/Ownable.sol",
-        "id": 123,
+        "id": 2,
         "nodeType": "ImportDirective",
-        "scope": 137,
-        "sourceUnit": 530,
-        "src": "25:52:3",
+        "scope": 16,
+        "sourceUnit": 126,
+        "src": "58:52:0",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -116,47 +118,47 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 124,
+              "id": 3,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 529,
-              "src": "107:7:3",
+              "referencedDeclaration": 125,
+              "src": "140:7:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$529",
+                "typeIdentifier": "t_contract$_Ownable_$125",
                 "typeString": "contract Ownable"
               }
             },
-            "id": 125,
+            "id": 4,
             "nodeType": "InheritanceSpecifier",
-            "src": "107:7:3"
+            "src": "140:7:0"
           }
         ],
         "contractDependencies": [
-          529,
-          1784
+          125,
+          148
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 136,
+        "id": 15,
         "linearizedBaseContracts": [
-          136,
-          529,
-          1784
+          15,
+          125,
+          148
         ],
         "name": "SampleOnlyOwner",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 128,
+              "id": 7,
               "nodeType": "Block",
-              "src": "146:2:3",
+              "src": "184:2:0",
               "statements": []
             },
             "documentation": null,
             "functionSelector": "59845504",
-            "id": 129,
+            "id": 8,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -164,93 +166,93 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 126,
+              "id": 5,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "136:2:3"
+              "src": "169:2:0"
             },
             "returnParameters": {
-              "id": 127,
+              "id": 6,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "146:0:3"
+              "src": "184:0:0"
             },
-            "scope": 136,
-            "src": "119:29:3",
-            "stateMutability": "nonpayable",
+            "scope": 15,
+            "src": "152:34:0",
+            "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 134,
+              "id": 13,
               "nodeType": "Block",
-              "src": "188:2:3",
+              "src": "231:2:0",
               "statements": []
             },
             "documentation": null,
             "functionSelector": "251fc2ed",
-            "id": 135,
+            "id": 14,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 132,
+                "id": 11,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 131,
+                  "id": 10,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 478,
-                  "src": "178:9:3",
+                  "referencedDeclaration": 74,
+                  "src": "216:9:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "178:9:3"
+                "src": "216:9:0"
               }
             ],
             "name": "ownerOp",
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 130,
+              "id": 9,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "168:2:3"
+              "src": "206:2:0"
             },
             "returnParameters": {
-              "id": 133,
+              "id": 12,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "188:0:3"
+              "src": "231:0:0"
             },
-            "scope": 136,
-            "src": "152:38:3",
-            "stateMutability": "nonpayable",
+            "scope": 15,
+            "src": "190:43:0",
+            "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 137,
-        "src": "79:113:3"
+        "scope": 16,
+        "src": "112:123:0"
       }
     ],
-    "src": "0:194:3"
+    "src": "33:204:0"
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/Users/wkzq/code/contracts/smartcontract-study/erc20/contracts/SampleOnlyOwner.sol",
+      "absolutePath": "/Users/wkzq/code/smartcontract/study/erc20/contracts/SampleOnlyOwner.sol",
       "exportedSymbols": {
         "SampleOnlyOwner": [
-          136
+          15
         ]
       },
-      "license": null
+      "license": "MIT"
     },
     "children": [
       {
@@ -261,42 +263,42 @@
             ".12"
           ]
         },
-        "id": 122,
+        "id": 1,
         "name": "PragmaDirective",
-        "src": "0:23:3"
+        "src": "33:23:0"
       },
       {
         "attributes": {
-          "SourceUnit": 530,
+          "SourceUnit": 126,
           "absolutePath": "@openzeppelin/contracts/access/Ownable.sol",
           "file": "@openzeppelin/contracts/access/Ownable.sol",
-          "scope": 137,
+          "scope": 16,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 123,
+        "id": 2,
         "name": "ImportDirective",
-        "src": "25:52:3"
+        "src": "58:52:0"
       },
       {
         "attributes": {
           "abstract": false,
           "contractDependencies": [
-            529,
-            1784
+            125,
+            148
           ],
           "contractKind": "contract",
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            136,
-            529,
-            1784
+            15,
+            125,
+            148
           ],
           "name": "SampleOnlyOwner",
-          "scope": 137
+          "scope": 16
         },
         "children": [
           {
@@ -308,17 +310,17 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "Ownable",
-                  "referencedDeclaration": 529,
+                  "referencedDeclaration": 125,
                   "type": "contract Ownable"
                 },
-                "id": 124,
+                "id": 3,
                 "name": "UserDefinedTypeName",
-                "src": "107:7:3"
+                "src": "140:7:0"
               }
             ],
-            "id": 125,
+            "id": 4,
             "name": "InheritanceSpecifier",
-            "src": "107:7:3"
+            "src": "140:7:0"
           },
           {
             "attributes": {
@@ -332,8 +334,8 @@
               ],
               "name": "normalOp",
               "overrides": null,
-              "scope": 136,
-              "stateMutability": "nonpayable",
+              "scope": 15,
+              "stateMutability": "view",
               "virtual": false,
               "visibility": "public"
             },
@@ -345,9 +347,9 @@
                   ]
                 },
                 "children": [],
-                "id": 126,
+                "id": 5,
                 "name": "ParameterList",
-                "src": "136:2:3"
+                "src": "169:2:0"
               },
               {
                 "attributes": {
@@ -356,9 +358,9 @@
                   ]
                 },
                 "children": [],
-                "id": 127,
+                "id": 6,
                 "name": "ParameterList",
-                "src": "146:0:3"
+                "src": "184:0:0"
               },
               {
                 "attributes": {
@@ -367,14 +369,14 @@
                   ]
                 },
                 "children": [],
-                "id": 128,
+                "id": 7,
                 "name": "Block",
-                "src": "146:2:3"
+                "src": "184:2:0"
               }
             ],
-            "id": 129,
+            "id": 8,
             "name": "FunctionDefinition",
-            "src": "119:29:3"
+            "src": "152:34:0"
           },
           {
             "attributes": {
@@ -385,8 +387,8 @@
               "kind": "function",
               "name": "ownerOp",
               "overrides": null,
-              "scope": 136,
-              "stateMutability": "nonpayable",
+              "scope": 15,
+              "stateMutability": "view",
               "virtual": false,
               "visibility": "public"
             },
@@ -398,9 +400,9 @@
                   ]
                 },
                 "children": [],
-                "id": 130,
+                "id": 9,
                 "name": "ParameterList",
-                "src": "168:2:3"
+                "src": "206:2:0"
               },
               {
                 "attributes": {
@@ -409,9 +411,9 @@
                   ]
                 },
                 "children": [],
-                "id": 133,
+                "id": 12,
                 "name": "ParameterList",
-                "src": "188:0:3"
+                "src": "231:0:0"
               },
               {
                 "attributes": {
@@ -424,18 +426,18 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 478,
+                      "referencedDeclaration": 74,
                       "type": "modifier ()",
                       "value": "onlyOwner"
                     },
-                    "id": 131,
+                    "id": 10,
                     "name": "Identifier",
-                    "src": "178:9:3"
+                    "src": "216:9:0"
                   }
                 ],
-                "id": 132,
+                "id": 11,
                 "name": "ModifierInvocation",
-                "src": "178:9:3"
+                "src": "216:9:0"
               },
               {
                 "attributes": {
@@ -444,24 +446,24 @@
                   ]
                 },
                 "children": [],
-                "id": 134,
+                "id": 13,
                 "name": "Block",
-                "src": "188:2:3"
+                "src": "231:2:0"
               }
             ],
-            "id": 135,
+            "id": 14,
             "name": "FunctionDefinition",
-            "src": "152:38:3"
+            "src": "190:43:0"
           }
         ],
-        "id": 136,
+        "id": 15,
         "name": "ContractDefinition",
-        "src": "79:113:3"
+        "src": "112:123:0"
       }
     ],
-    "id": 137,
+    "id": 16,
     "name": "SourceUnit",
-    "src": "0:194:3"
+    "src": "33:204:0"
   },
   "compiler": {
     "name": "solc",
@@ -493,10 +495,62 @@
       "links": {},
       "address": "0x8e3eD6931336dAC6f01EDc1E11479f5b231d4836",
       "transactionHash": "0x6398a10a208a88fc164993bd3cfec94c130e4458e9c470f2e14a2bbca8cd2354"
+    },
+    "5": {
+      "events": {
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xef24b00c2Ee42203bC27BCcD85fDA01631b60D2A",
+      "transactionHash": "0x2f6c81e41091ca7fba6b17159afb2cf935fa762a841187b002cf72730ff57523"
+    },
+    "80001": {
+      "events": {
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xef24b00c2Ee42203bC27BCcD85fDA01631b60D2A",
+      "transactionHash": "0x2f6c81e41091ca7fba6b17159afb2cf935fa762a841187b002cf72730ff57523"
     }
   },
-  "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-03T08:11:01.580Z",
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-03-10T14:56:59.438Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
