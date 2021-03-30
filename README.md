@@ -19,12 +19,20 @@ npm install --save-dev ethereum-waffle
 npx waffle flatten
 ````
 
+brownie build & deploy contract
+brownie支持使用python编写unit test
+```
+brownie init
+```
+
 参考:
 https://www.trufflesuite.com/tutorials/using-infura-custom-provider
 
 https://github.com/rkalis/truffle-plugin-verify
 
 https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html
+
+https://eth-brownie.readthedocs.io/en/stable/quickstart.html
 
 contract地址:
 SampleOnlyOwner: 0x70924f71829A5e5A1311F875a1C3D9720CA677Bf
